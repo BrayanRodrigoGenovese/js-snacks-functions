@@ -9,10 +9,18 @@ const name = "Mario";
 
 // Dichiara la funzione qui.
 function advancedGreeting(name) {
-  const date = new Date();
-  const actualHour = date.getHours();
+  const today = new Date();
+  const actualHour = today.getHours();
+
+  if (actualHour > 17) {
+    return "Buonasera " + name;
+  } else if (actualHour > 13) {
+    return "Buon pomeriggio " + name;
+  } else {
+    return "Buongiorno " + name;
+  }
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-advancedGreeting(name);
+console.log(advancedGreeting(name));
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
