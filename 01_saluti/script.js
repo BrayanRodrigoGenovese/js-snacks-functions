@@ -3,8 +3,13 @@
 const userName = "Mario";
 
 // Dichiara la funzione qui.
+/**
+ * Generates a personalized greeting for a user
+ * @param {string} name - username
+ * @returns {string} - personalized greetings
+ */
 function greetings(name) {
-  return "Ciao " + name;
+  return `Ciao ${name}`;
 }
 
 // Invoca la funzione qui e stampa il risultato in console

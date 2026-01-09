@@ -3,7 +3,11 @@
 const word = "javascript";
 
 // Dichiara la funzione qui.
-
+/**
+ * Count the total number of vowels in the given string
+ * @param {string} word - The string to be analyzed
+ * @returns {number} - The total count of vowels
+ */
 function vowelsCount(word) {
   let counter = 0;
 

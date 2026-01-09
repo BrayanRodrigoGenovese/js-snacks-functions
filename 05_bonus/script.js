@@ -8,6 +8,11 @@ e buonasera se è sera (oltre le 17)
 const name = "Mario";
 
 // Dichiara la funzione qui.
+/**
+ * Returns a time-appropriate greeting based on the current hour of the day.
+ * @param {string} name - The name of the person to greet
+ * @returns {string} - A contextual greeting (Good morning/afternoon/evening) followed by the name.
+ */
 function advancedGreeting(name) {
   const today = new Date();
   const actualHour = today.getHours();

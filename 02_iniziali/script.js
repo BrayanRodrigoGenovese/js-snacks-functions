@@ -3,6 +3,11 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
+/**
+ * Extracts the first letter from each name
+ * @param {string[]} namesList - An array of names.
+ * @returns {string[]} - An array containing the first initial of each name.
+ */
 function nameInitials(namesList) {
   const initials = [];
   for (let i = 0; i < namesList.length; i++) {
