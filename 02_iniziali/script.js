@@ -2,12 +2,15 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-
 // Dichiara la funzione qui.
-
+function nameInitials(namesList) {
+  const initials = [];
+  for (let i = 0; i < namesList.length; i++) {
+    initials += namesList[i][0];
+  }
+  return initials;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
