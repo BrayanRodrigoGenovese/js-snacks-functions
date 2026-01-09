@@ -6,11 +6,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 function nameInitials(namesList) {
   const initials = [];
   for (let i = 0; i < namesList.length; i++) {
-    initials += namesList[i][0];
+    initials.push(namesList[i][0]);
   }
   return initials;
 }
 
+console.log(typeof nameInitials(names));
 // Invoca la funzione qui e stampa il risultato in console
+console.log(nameInitials(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
