@@ -2,12 +2,20 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
-
 // Dichiara la funzione qui.
 
+function findNamesWithInitial(initial, nameslist) {
+  const namesWithInitial = [];
+  for (let i = 0; i < nameslist.length; i++) {
+    if (initial === nameslist[i][0]) {
+      namesWithInitial.push(nameslist[i]);
+    }
+  }
+  return namesWithInitial;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(findNamesWithInitial("A", names));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
