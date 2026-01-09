@@ -5,14 +5,14 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
-const name = 'Mario';
-
+const name = "Mario";
 
 // Dichiara la funzione qui.
-
+function advancedGreeting(name) {
+  const date = new Date();
+  const actualHour = date.getHours();
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
-
+advancedGreeting(name);
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
